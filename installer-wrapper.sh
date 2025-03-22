@@ -35,7 +35,7 @@ run() {
 
     # shellcheck disable=SC2116
     # this trims one trailing slash
-    # DT_ENDPOINT=$(echo "${DT_ENDPOINT%/}")
+    DT_ENDPOINT=$(echo "${DT_ENDPOINT%/}")
 
     # wget -O "$INSTALLER_DOWNLOAD_PATH" -q "$DT_ENDPOINT/$INSTALLER_URL_SUFFIX?Api-Token=$DT_API_TOKEN&flavor=$DT_FLAVOR&include=$DT_INCLUDE"
     # sh "$INSTALLER_DOWNLOAD_PATH"
