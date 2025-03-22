@@ -43,7 +43,7 @@ run() {
     # Inject variable into the proccess and run the actual application proccess
     # LD_PRELOAD="/opt/dynatrace/oneagent/agent/lib64/liboneagentproc.so" $START_APP_CMD
     node --version
-    node start.js
+    node server.js
 }
 
 
