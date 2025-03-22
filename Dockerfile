@@ -11,5 +11,5 @@ EXPOSE 8080
 # Install OneAgent
 
 
-CMD ["server.js"]
+ENTRYPOINT ["node","server.js"]
 
